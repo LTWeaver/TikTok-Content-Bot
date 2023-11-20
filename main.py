@@ -8,7 +8,7 @@ from googleapiclient.discovery import build
 from pytube import YouTube
 
 # Set your API key
-api_key = 'AIzaSyApz2wAkqFO9al-oR6hhWLAY_iixoCVamk'
+api_key = 'YOUR_API_KEY'
 
 # Create a YouTube Data API client
 youtube = build('youtube', 'v3', developerKey=api_key)
@@ -110,7 +110,7 @@ def upload(path):
     tab.find_element(locator.tiktok.one).click(by='mouse-emulation') #starts the mouse emulation and locates the upload button
 
     time.sleep(2)
-    keyboard.write(f"C:\\Users\\josep\\OneDrive\\Desktop\\content_bot\\scraped_content\\{path}")
+    keyboard.write(f"[path to your scraped_content folder]\\{path}")
     pyautogui.press('enter')
     time.sleep(15)
     tab.find_element(locator.tiktok.five).click(by='mouse-emulation')
